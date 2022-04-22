@@ -8,7 +8,7 @@
 	<title>Diabetic App</title>
 </head>
 <body>
-	<button name="add" id="add" onclick="location.href = 'upload.php';">Add</button>
+	<button name="add" id="add" onclick="location.href = 'add.php';">Add</button>
 	<h1>Diabetic App</h1>
 	<div class="container">
 		<input type="datetime-local" id="datetime" name="datetime">
