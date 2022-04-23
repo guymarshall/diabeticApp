@@ -16,19 +16,19 @@
         <input type="date" name="date" id="date" value="<?php echo date('Y-m-d'); ?>">
         <br>
         <label for="bloodGlucose">bloodGlucose</label>
-        <input type="number" name="bloodGlucose" id="bloodGlucose">
+        <input type="number" name="bloodGlucose" id="bloodGlucose" min="0.0" step="0.1">
         <br>
         <label for="carbs">carbs</label>
-        <input type="number" name="carbs" id="carbs">
+        <input type="number" name="carbs" id="carbs" min="0">
         <br>
         <label for="insulinShort">insulinShort</label>
-        <input type="number" name="insulinShort" id="insulinShort">
+        <input type="number" name="insulinShort" id="insulinShort" min="0">
         <br>
         <label for="insulinLong">insulinLong</label>
-        <input type="number" name="insulinLong" id="insulinLong">
+        <input type="number" name="insulinLong" id="insulinLong" min="0">
         <br>
         <label for="insulinCorrection">insulinCorrection</label>
-        <input type="number" name="insulinCorrection" id="insulinCorrection">
+        <input type="number" name="insulinCorrection" id="insulinCorrection" min="0">
         <br>
         <label for="notes">notes</label>
         <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Enter notes..."></textarea>
