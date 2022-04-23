@@ -1,14 +1,3 @@
-<?php
-    //time (default now)
-    //date (default now)
-    //blood glucose
-    //carbs (default 0)
-    //insulin short (default 0)
-    //insulin long (default 0)
-    //insulin correction (default 0)
-    //notes
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
