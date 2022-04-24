@@ -50,6 +50,14 @@
         'notes' => $notes = isset($_POST['notes']) ? $_POST['notes'] : ''
     ];
 
-    echo '<pre>';
-    print_r($user_input);
-    echo '</pre>';
+    // echo '<pre>';
+    // print_r($user_input);
+    // echo '</pre>';
+?>
+	<table>
+		<?php foreach ($user_input as $input): ?>
+		<tr>
+			<td><?php echo $input; ?></td>
+		</tr>
+		<?php endforeach; ?>
+	</table>
