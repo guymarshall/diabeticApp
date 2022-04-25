@@ -41,6 +41,8 @@
         header('Location: index.php');
     }
 
+    // bug - cannot access page, instead logs in with '' and '' as email and password
+
     // echo '<pre>';
     // print_r($login_details);
     // echo '</pre>';
