@@ -25,3 +25,28 @@
     </form>
 </body>
 </html>
+
+<?php
+    $login_details = [
+        'email' => $email = isset($_POST['email']) ? $_POST['email'] : '',
+        'password' => $password = isset($_POST['password']) ? $_POST['password'] : ''
+    ];
+
+    if (!isset($_SESSION['email'])) {
+        $_SESSION['email'] = $login_details['email'];
+    }
+    if (!isset($_SESSION['password'])) {
+        $_SESSION['password'] = $login_details['password'];
+    }
+    
+    if (isset($_SESSION['email'])) {
+        echo '<br>' . 'email: ' . $_SESSION['email'];
+    }
+    if (isset($_SESSION['password'])) {
+        echo '<br>' . 'password: ' . $_SESSION['password'];
+    }
+
+    // echo '<pre>';
+    // print_r($login_details);
+    // echo '</pre>';
+?>
