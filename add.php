@@ -57,6 +57,13 @@
     // echo '<pre>';
     // print_r($user_input);
     // echo '</pre>';
+
+    if (isset($_SESSION['email'])) {
+        echo '<br>' . 'email: ' . $_SESSION['email'];
+    }
+    if (isset($_SESSION['password'])) {
+        echo '<br>' . 'password: ' . $_SESSION['password'];
+    }
 ?>
 
 <table>
