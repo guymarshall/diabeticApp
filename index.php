@@ -13,7 +13,11 @@
 </head>
 <body>
 	<button name="add" id="add" onclick="location.href = 'add.php';">Add</button>
-	<button name="login" id="login" onclick="location.href = 'login.php';">Login</button>
+	<?php if (isset($_SESSION['email']) && isset($_SESSION['password'])): ?>
+		<button name="logout" id="logout" onclick="location.href = 'logout.php';">Logout</button>
+	<?php else: ?>
+		<button name="login" id="login" onclick="location.href = 'login.php';">Login</button>
+	<?php endif; ?>
 	<h1>Diabetic App</h1>
 	<div class="container">
 		<input type="datetime-local" id="datetime" name="datetime">
