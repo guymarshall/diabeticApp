@@ -19,5 +19,20 @@
 		<canvas id="myChart" width="100%" height="45%"></canvas>
 	</div>
 	<script src="script.js"></script>
+
+	<?php
+		// Get user_input from database
+		$user_input = [];
+	?>
+
+	<table>
+		<?php if (isset($user_input)): ?>
+			<?php foreach ($user_input as $input): ?>
+			<tr>
+				<td><?php echo $input; ?></td>
+			</tr>
+			<?php endforeach; ?>
+		<?php endif; ?>
+	</table>
 </body>
 </html>
