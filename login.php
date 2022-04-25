@@ -32,18 +32,13 @@
         'password' => $password = isset($_POST['password']) ? $_POST['password'] : ''
     ];
 
-    if (!isset($_SESSION['email'])) {
+    if (!isset($_SESSION['email']) && !isset($_SESSION['password'])) {
         $_SESSION['email'] = $login_details['email'];
-    }
-    if (!isset($_SESSION['password'])) {
         $_SESSION['password'] = $login_details['password'];
     }
     
-    if (isset($_SESSION['email'])) {
-        echo '<br>' . 'email: ' . $_SESSION['email'];
-    }
-    if (isset($_SESSION['password'])) {
-        echo '<br>' . 'password: ' . $_SESSION['password'];
+    if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
+        header('Location: index.php');
     }
 
     // echo '<pre>';
