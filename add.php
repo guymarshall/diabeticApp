@@ -54,10 +54,11 @@
     // print_r($user_input);
     // echo '</pre>';
 ?>
-	<table>
-		<?php foreach ($user_input as $input): ?>
-		<tr>
-			<td><?php echo $input; ?></td>
-		</tr>
-		<?php endforeach; ?>
-	</table>
+
+<table>
+    <?php foreach ($user_input as $input): ?>
+    <tr>
+        <td><?php echo $input; ?></td>
+    </tr>
+    <?php endforeach; ?>
+</table>
