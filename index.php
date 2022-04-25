@@ -9,6 +9,7 @@
 </head>
 <body>
 	<button name="add" id="add" onclick="location.href = 'add.php';">Add</button>
+	<button name="login" id="login" onclick="location.href = 'login.php';">Login</button>
 	<h1>Diabetic App</h1>
 	<div class="container">
 		<input type="datetime-local" id="datetime" name="datetime">
