@@ -10,11 +10,8 @@ class Database {
 		$this->password = "password";
 	}
 
-	public function create_connection() {
+	public function create_and_check_connection() {
 		$connection = new mysqli($servername, $username, $password);
-	}
-
-	public function check_connection() {
 		if ($connection->connect_error) {
 				die("Connection failed: " . $connection->connect_error);
 		}
