@@ -19,9 +19,6 @@
 		<button name="login" id="login" onclick="location.href = 'login.php';">Login</button>
 	<?php endif; ?>
 	<h1>Diabetic App</h1>
-	<div class="container">
-		<input type="datetime-local" id="datetime" name="datetime">
-	</div>
 	<button id="reloadButton" name="reloadButton">Reload</button>
 	<br>
 	<div id="chartDiv">
