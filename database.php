@@ -1,14 +1,24 @@
 <?php
-    $servername = "localhost";
-    $username = "username";
-    $password = "password";
+	class Database {
+		public $servername;
+		public $username;
+		public $password;
 
-    // Create connection
-    $connection = new mysqli($servername, $username, $password);
+		public function __construct() {
+			$this->servername = "localhost";
+			$this->username = "username";
+			$this->password = "password";
+		}
 
-    // Check connection
-    if ($connection->connect_error) {
-        die("Connection failed: " . $connection->connect_error);
-    }
-    echo "Connected successfully";
+		public function create_connection() {
+			$connection = new mysqli($servername, $username, $password);
+		}
+
+		public function check_connection() {
+			if ($connection->connect_error) {
+					die("Connection failed: " . $connection->connect_error);
+			}
+			echo "Connected successfully";
+		}
+	}
 ?>
