@@ -50,3 +50,7 @@ session_start();
 	</table>
 </body>
 </html>
+
+<?php
+$oDatabase = new Database();
+$oDatabase->create_and_check_connection();
