@@ -28,15 +28,15 @@ session_start();
 	<script src="script.js"></script>
 
 	<?php
-		// Get user_input from database
-		$user_input = [];
-		
-		if (isset($_SESSION['email'])) {
-			echo '<br>' . 'email: ' . $_SESSION['email'];
-		}
-		if (isset($_SESSION['password'])) {
-			echo '<br>' . 'password: ' . $_SESSION['password'];
-		}
+	// Get user_input from database
+	$user_input = [];
+	
+	if (isset($_SESSION['email'])) {
+		echo '<br>' . 'email: ' . $_SESSION['email'];
+	}
+	if (isset($_SESSION['password'])) {
+		echo '<br>' . 'password: ' . $_SESSION['password'];
+	}
 	?>
 
 	<table>

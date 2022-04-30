@@ -43,27 +43,27 @@
 </html>
 
 <?php
-    $user_input = [
-        'time' => $time = isset($_POST['time']) ? $_POST['time'] : '',
-        'date' => $date = isset($_POST['date']) ? $_POST['date'] : '',
-        'bloodGlucose' => $bloodGlucose = isset($_POST['bloodGlucose']) ? $_POST['bloodGlucose'] : '',
-        'carbs' => $carbs = isset($_POST['carbs']) ? $_POST['carbs'] : '',
-        'insulinShort' => $insulinShort = isset($_POST['insulinShort']) ? $_POST['insulinShort'] : '',
-        'insulinLong' => $insulinLong = isset($_POST['insulinLong']) ? $_POST['insulinLong'] : '',
-        'insulinCorrection' => $insulinCorrection = isset($_POST['insulinCorrection']) ? $_POST['insulinCorrection'] : '',
-        'notes' => $notes = isset($_POST['notes']) ? $_POST['notes'] : ''
-    ];
+$user_input = [
+    'time' => $time = isset($_POST['time']) ? $_POST['time'] : '',
+    'date' => $date = isset($_POST['date']) ? $_POST['date'] : '',
+    'bloodGlucose' => $bloodGlucose = isset($_POST['bloodGlucose']) ? $_POST['bloodGlucose'] : '',
+    'carbs' => $carbs = isset($_POST['carbs']) ? $_POST['carbs'] : '',
+    'insulinShort' => $insulinShort = isset($_POST['insulinShort']) ? $_POST['insulinShort'] : '',
+    'insulinLong' => $insulinLong = isset($_POST['insulinLong']) ? $_POST['insulinLong'] : '',
+    'insulinCorrection' => $insulinCorrection = isset($_POST['insulinCorrection']) ? $_POST['insulinCorrection'] : '',
+    'notes' => $notes = isset($_POST['notes']) ? $_POST['notes'] : ''
+];
 
-    // echo '<pre>';
-    // print_r($user_input);
-    // echo '</pre>';
+// echo '<pre>';
+// print_r($user_input);
+// echo '</pre>';
 
-    if (isset($_SESSION['email'])) {
-        echo '<br>' . 'email: ' . $_SESSION['email'];
-    }
-    if (isset($_SESSION['password'])) {
-        echo '<br>' . 'password: ' . $_SESSION['password'];
-    }
+if (isset($_SESSION['email'])) {
+    echo '<br>' . 'email: ' . $_SESSION['email'];
+}
+if (isset($_SESSION['password'])) {
+    echo '<br>' . 'password: ' . $_SESSION['password'];
+}
 ?>
 
 <table>

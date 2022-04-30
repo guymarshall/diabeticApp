@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -27,23 +27,23 @@
 </html>
 
 <?php
-    $login_details = [
-        'email' => $email = isset($_POST['email']) ? $_POST['email'] : '',
-        'password' => $password = isset($_POST['password']) ? $_POST['password'] : ''
-    ];
+$login_details = [
+    'email' => $email = isset($_POST['email']) ? $_POST['email'] : '',
+    'password' => $password = isset($_POST['password']) ? $_POST['password'] : ''
+];
 
-    if (!isset($_SESSION['email']) && !isset($_SESSION['password'])) {
-        $_SESSION['email'] = $login_details['email'];
-        $_SESSION['password'] = $login_details['password'];
-    }
-    
-    if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
-        header('Location: index.php');
-    }
+if (!isset($_SESSION['email']) && !isset($_SESSION['password'])) {
+    $_SESSION['email'] = $login_details['email'];
+    $_SESSION['password'] = $login_details['password'];
+}
 
-    // bug - cannot access page, instead logs in with '' and '' as email and password
+if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
+    header('Location: index.php');
+}
 
-    // echo '<pre>';
-    // print_r($login_details);
-    // echo '</pre>';
+// bug - cannot access page, instead logs in with '' and '' as email and password
+
+// echo '<pre>';
+// print_r($login_details);
+// echo '</pre>';
 ?>
