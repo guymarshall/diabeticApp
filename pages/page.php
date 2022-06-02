@@ -1,5 +1,7 @@
 <?php
 
+require_once 'database.php';
+
 class Page {
     function create_page($title, $content, $script_js = '') {
         $app_name = 'Diabetic App';
