@@ -41,7 +41,7 @@ class Page {
         </div>
         <footer class="border-top footer text-muted">
             <div class="container">
-                &copy; '.date('Y').' - '.$app_name.' - <a href="./privacy.php">Privacy</a>
+                &copy; '.date('Y').' - '.$app_name.' - <a href="/pages/privacy.php">Privacy</a>
             </div>
         </footer>';
 
