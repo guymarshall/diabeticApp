@@ -1,6 +1,6 @@
 <?php
 
-require 'page.php';
+require '../models/page.php';
 
 $content = '';
 
