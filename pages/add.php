@@ -16,11 +16,11 @@ $content .= '
 	<label class="col-sm-2" for="carbs">carbs</label>
 	<input class="form-control" type="number" name="carbs" id="carbs" min="0">
 	<label class="col-sm-2" for="insulinShort">insulinShort</label>
-	<input class="form-control" type="number" name="insulinShort" id="insulinShort" min="0">
+	<input class="form-control" type="number" name="insulinShort" id="insulinShort" value="0" min="0">
 	<label class="col-sm-2" for="insulinLong">insulinLong</label>
-	<input class="form-control" type="number" name="insulinLong" id="insulinLong" min="0">
+	<input class="form-control" type="number" name="insulinLong" id="insulinLong" value="0" min="0">
 	<label class="col-sm-2" for="insulinCorrection">insulinCorrection</label>
-	<input class="form-control" type="number" name="insulinCorrection" id="insulinCorrection" min="0">
+	<input class="form-control" type="number" name="insulinCorrection" id="insulinCorrection" value="0" min="0">
 	<label class="col-sm-2" for="notes">notes</label>
 	<textarea class="form-control" name="notes" id="notes" cols="30" rows="10" placeholder="Enter notes..."></textarea>
 	<button type="submit" name="addButton" id="addButton">Add</button>
