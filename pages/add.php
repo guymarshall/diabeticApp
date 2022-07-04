@@ -39,9 +39,12 @@ $user_input = [
 ];
 
 if (isset($_POST['addButton'])) {
-	$oFile = new File("test_file.txt");
+	$oFile = new File(date('Y.m.d').'.txt');
 	$oFile->openFile();
-	$oFile->appendContent(implode($user_input));
+	foreach ($user_input as $key => $value) {
+		$oFile->appendContent($key.': '.$value."\n"); // double quotes for new line character
+	}
+	$oFile->closeFile();
 	header("Location: index.php");
 }
 
