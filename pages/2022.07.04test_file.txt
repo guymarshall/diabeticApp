@@ -1,8 +1,0 @@
-time: 11:26
-date: 2022-07-04
-bloodGlucose: 2
-carbs: 2
-insulinShort: 2
-insulinLong: 2
-insulinCorrection: 2
-notes: 2
