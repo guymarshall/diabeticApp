@@ -39,7 +39,7 @@ $user_input = [
 ];
 
 if (isset($_POST['addButton'])) {
-	$oFile = new File(date('Y.m.d').'.txt');
+	$oFile = new File('../files/'.date('Y.m.d').'.txt');
 	$oFile->openFile();
 	foreach ($user_input as $key => $value) {
 		$oFile->appendContent($key.': '.$value."\n"); // double quotes for new line character
