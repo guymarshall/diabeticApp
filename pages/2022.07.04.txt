@@ -1,0 +1,8 @@
+time: 11:27
+date: 2022-07-04
+bloodGlucose: 206
+carbs: 0
+insulinShort: 0
+insulinLong: 0
+insulinCorrection: 3
+notes: Trying to get sugar down
