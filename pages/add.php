@@ -1,6 +1,7 @@
 <?php
 
 require '../models/page.php';
+require '../models/file.php';
 
 $content = '';
 
@@ -22,7 +23,7 @@ $content .= '
 	<input class="form-control" type="number" name="insulinCorrection" id="insulinCorrection" min="0">
 	<label class="col-sm-2" for="notes">notes</label>
 	<textarea class="form-control" name="notes" id="notes" cols="30" rows="10" placeholder="Enter notes..."></textarea>
-	<button type="submit">Add</button>
+	<button type="submit" name="addButton" id="addButton">Add</button>
 </form>
 ';
 
@@ -36,6 +37,13 @@ $user_input = [
 	'insulinCorrection' => $insulinCorrection = isset($_POST['insulinCorrection']) ? filter_var($_POST['insulinCorrection'], FILTER_SANITIZE_NUMBER_INT) : '',
 	'notes' => $notes = isset($_POST['notes']) ? $_POST['notes'] : ''
 ];
+
+if (isset($_POST['addButton'])) {
+	$oFile = new File("test_file.txt");
+	$oFile->openFile();
+	$oFile->appendContent(implode($user_input));
+	header("Location: index.php");
+}
 
 // echo '<pre>';
 // print_r($user_input);
