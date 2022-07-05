@@ -72,6 +72,12 @@ const myChart = new Chart(
 );
 ';
 
+$files = array_diff_key(scandir('../files/'), ['.', '..']);
+foreach ($files as $file) {
+    echo $file;
+    echo '<br>';
+}
+
 $o_results_page = new Page();
 $results_html = $o_results_page->create_page('Results', $content, $footer_code);
 echo $results_html;
