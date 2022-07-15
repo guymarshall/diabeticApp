@@ -36,13 +36,15 @@ function createRandomColour(count) {
     return colourArray;
 }
 
+const count = '.count($files).'
+
 const labels = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < count; i++) {
     labels.push(Math.round(Math.random() * 100));
 }
 
 const dataArray = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < count; i++) {
     dataArray.push(Math.round(Math.random() * 100));
 }
 
