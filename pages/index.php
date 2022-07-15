@@ -1,6 +1,13 @@
 <?php
 
 require '../models/page.php';
+require '../models/file.php';
+
+$files = array_diff_key(scandir('../files/'), ['.', '..']);
+foreach ($files as $file) {
+    echo $file;
+    echo '<br>';
+}
 
 $content = '';
 
@@ -71,12 +78,6 @@ const myChart = new Chart(
     config
 );
 ';
-
-$files = array_diff_key(scandir('../files/'), ['.', '..']);
-foreach ($files as $file) {
-    echo $file;
-    echo '<br>';
-}
 
 $o_results_page = new Page();
 $results_html = $o_results_page->create_page('Results', $content, $footer_code);
