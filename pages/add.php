@@ -5,12 +5,17 @@ require '../models/file.php';
 
 $content = '';
 
+$timezone = 'Europe/London';
+$timestamp = time();
+$datetime = new DateTime("now", new DateTimeZone($timezone)); //
+$datetime->setTimestamp($timestamp);
+
 $content .= '
 <form name="glucoseForm" id="glucoseForm" action="add.php" method="post">
 	<label class="col-sm-2" for="time">time</label>
-	<input class="form-control" type="time" name="time" id="time" value="'.date('H:i').'">
+	<input class="form-control" type="time" name="time" id="time" value="'.$datetime->format('H:i').'">
 	<label class="col-sm-2" for="date">date</label>
-	<input class="form-control" type="date" name="date" id="date" value="'.date('Y-m-d').'">
+	<input class="form-control" type="date" name="date" id="date" value="'.$datetime->format('Y-m-d').'">
 	<label class="col-sm-2" for="bloodGlucose">bloodGlucose</label>
 	<input class="form-control" type="number" name="bloodGlucose" id="bloodGlucose" min="0.0" step="0.1">
 	<label class="col-sm-2" for="carbs">carbs</label>
