@@ -81,6 +81,3 @@ foreach ($files as $file) {
 $o_results_page = new Page();
 $results_html = $o_results_page->create_page('Results', $content, $footer_code);
 echo $results_html;
-
-// $o_database = new Database();
-// var_dump($o_database);
