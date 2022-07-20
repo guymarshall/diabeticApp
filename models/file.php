@@ -1,5 +1,7 @@
 <?php
 
+require_once 'functions.php';
+
 class File
 {
     protected $filename;
