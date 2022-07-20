@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 class Functions {
     public static function print_r_easy($variable, $exit = true)
     {
